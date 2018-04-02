@@ -32,6 +32,12 @@ ext {
             businessModuleDailyVersionCode :100,
             businessModuleDailyVersionName :"1.0.0",
 
+            businessModuleGanVersionCode :100,
+            businessModuleGanVersionName :"1.0.0",
+
+            businessModuleReadVersionCode :100,
+            businessModuleReadVersionName :"1.0.0",
+
             //p-business-module
             businessComponentInitGuideVersionCode :100,
             businessComponentInitGuideVersionName :"1.0.0",

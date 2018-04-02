@@ -4,7 +4,7 @@ android {
     buildToolsVersion rootProject.ext.android["buildToolsVersion"]
 
     defaultConfig {
-        applicationId "com.hshare.multiple.module.test"
+        applicationId "hshare.multiple.module.test"
         minSdkVersion rootProject.ext.android["minSdkVersion"]
         targetSdkVersion rootProject.ext.android["targetSdkVersion"]
         versionCode rootProject.ext.android["businessModuleDailyVersionCode"]

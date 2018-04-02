@@ -24,4 +24,5 @@ dependencies {
     implementation rootProject.ext.dependencies["appcompat-v7"]
     implementation rootProject.ext.dependencies["android-gif-drawable"]
     compile project(':p-base-component:base-component-view')
+    implementation project(':p-base-component:base-componet-general')
 }
