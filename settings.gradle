@@ -3,9 +3,11 @@ include ':p-multiple-module:multiple-module-hcare'
 
 include ':p-base-component:base-componet-general'
 include ':p-base-component:base-component-view'
+include ':p-base-component:arms-old'
 
 include ':p-business-module:business-module-daily'
 include ':p-business-module:business-module-gan'
 include ':p-business-module:business-module-read'
+include ':p-business-module:business-module-jian3'
 
 include ':p-business-component:business-component-initguide'

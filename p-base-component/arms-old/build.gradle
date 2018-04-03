@@ -1,0 +1,119 @@
+apply plugin: 'com.android.library'
+apply plugin: 'me.tatarka.retrolambda'
+
+android {
+    compileSdkVersion rootProject.ext.android1["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android1["buildToolsVersion"]
+    useLibrary 'org.apache.http.legacy'
+
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        minSdkVersion rootProject.ext.android1["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android1["targetSdkVersion"]
+        versionCode rootProject.ext.android1["versionCode"]
+        versionName rootProject.ext.android1["versionName"]
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+}
+
+
+dependencies {
+    compile fileTree(dir: 'libs', include: ['*.jar'])
+
+    //support
+    compile (rootProject.ext.dependencies1["support-v4"]){
+        exclude module: 'support-annotations'
+    }
+    compile (rootProject.ext.dependencies1["appcompat-v7"]){
+        exclude module: 'support-annotations'
+        exclude module: 'support-v4'
+    }
+    compile (rootProject.ext.dependencies1["cardview-v7"]){
+        exclude module: 'support-annotations'
+    }
+    compile (rootProject.ext.dependencies1["design"]){
+        exclude module: 'support-annotations'
+    }
+    compile rootProject.ext.dependencies1["annotations"]
+
+
+
+    //view
+    compile (rootProject.ext.dependencies1["autolayout"]) {
+        exclude group: 'com.android.support'
+    }
+    compile (rootProject.ext.dependencies1["butterknife"]){
+        exclude module: 'support-annotations'
+    }
+
+
+
+    //rx
+    compile rootProject.ext.dependencies1["rxjava2"]
+    compile (rootProject.ext.dependencies1["rxandroid2"]){
+        exclude module: 'rxjava'
+    }
+    compile (rootProject.ext.dependencies1["rxcache2"]){
+        exclude module: 'rxjava'
+        exclude module: 'dagger'
+    }
+    compile (rootProject.ext.dependencies1["rxcache-jolyglot-gson"]){
+        exclude module: 'gson'
+    }
+    compile (rootProject.ext.dependencies1["rxlifecycle2"]){
+        exclude module: 'rxjava'
+    }
+    compile (rootProject.ext.dependencies1["rxlifecycle2-components"]){
+        exclude module: 'support-v4'
+        exclude module: 'appcompat-v7'
+        exclude module: 'support-annotations'
+        exclude module: 'rxjava'
+        exclude module: 'rxandroid'
+    }
+    compile rootProject.ext.dependencies1["rxpermissions2"]
+    compile (rootProject.ext.dependencies1['rxerrorhandler2']){
+        exclude module: 'rxjava'
+    }
+
+
+    //network
+    compile (rootProject.ext.dependencies1["retrofit"]){
+        exclude module: 'okhttp'
+    }
+    compile (rootProject.ext.dependencies1["retrofit-converter-gson"]){
+        exclude module: 'gson'
+    }
+    compile (rootProject.ext.dependencies1["retrofit-adapter-rxjava2"]){
+        exclude module: 'rxjava'
+    }
+    compile rootProject.ext.dependencies1["okhttp3"]
+    compile rootProject.ext.dependencies1["glide"]
+
+    //tools
+    provided rootProject.ext.dependencies1["javax.annotation"]
+    compile rootProject.ext.dependencies1["dagger2"]
+    annotationProcessor rootProject.ext.dependencies1["dagger2-compiler"]
+    compile rootProject.ext.dependencies1["androideventbus"]
+    compile rootProject.ext.dependencies1["gson"]
+
+    //test
+    compile rootProject.ext.dependencies1["timber"]
+    testCompile rootProject.ext.dependencies1["junit"]
+}
+

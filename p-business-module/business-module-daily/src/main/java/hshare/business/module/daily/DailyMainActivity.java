@@ -14,22 +14,22 @@ public class DailyMainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.daily_activity_main);
-        GuideHelper.getInstance().init(getSupportFragmentManager()
-                , (ScrollerViewPager) findViewById(R.id.view_pager)
-                , (SpringIndicator) findViewById(R.id.indicator)
-                , getResources().getStringArray(R.array.indicator_titles)
-                , new int[]{
-                        R.mipmap.guide5,
-                        R.mipmap.guide6,
-                        R.mipmap.guide7,
-                        R.mipmap.guide8}, new SimpleOnPageClickListener() {
-                    @Override
-                    public void onFinish(boolean isFinish) {
-                        if (isFinish) {
-//                            startActivity(new Intent(SplashActivity.this, WelcomeActivity.class));
-//                            SplashActivity.this.finish();
-                        }
-                    }
-                });
+//        GuideHelper.getInstance().init(getSupportFragmentManager()
+//                , (ScrollerViewPager) findViewById(R.id.view_pager)
+//                , (SpringIndicator) findViewById(R.id.indicator)
+//                , getResources().getStringArray(R.array.indicator_titles)
+//                , new int[]{
+//                        R.mipmap.guide5,
+//                        R.mipmap.guide6,
+//                        R.mipmap.guide7,
+//                        R.mipmap.guide8}, new SimpleOnPageClickListener() {
+//                    @Override
+//                    public void onFinish(boolean isFinish) {
+//                        if (isFinish) {
+////                            startActivity(new Intent(SplashActivity.this, WelcomeActivity.class));
+////                            SplashActivity.this.finish();
+//                        }
+//                    }
+//                });
     }
 }

@@ -4,11 +4,13 @@
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HsharePlatform.iml" filepath="$PROJECT_DIR$/HsharePlatform.iml" />
       <module fileurl="file://D:\Android\ACODE\HsharePlatform\p-multiple-module\multiple-module-test\PlatformTest.iml" filepath="D:\Android\ACODE\HsharePlatform\p-multiple-module\multiple-module-test\PlatformTest.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p-base-component/arms-old/arms-old.iml" filepath="$PROJECT_DIR$/p-base-component/arms-old/arms-old.iml" />
       <module fileurl="file://$PROJECT_DIR$/p-base-component/base-component-view/base-component-view.iml" filepath="$PROJECT_DIR$/p-base-component/base-component-view/base-component-view.iml" />
       <module fileurl="file://$PROJECT_DIR$/p-base-component/base-componet-general/base-componet-general.iml" filepath="$PROJECT_DIR$/p-base-component/base-componet-general/base-componet-general.iml" />
       <module fileurl="file://$PROJECT_DIR$/p-business-component/business-component-initguide/business-component-initguide.iml" filepath="$PROJECT_DIR$/p-business-component/business-component-initguide/business-component-initguide.iml" />
       <module fileurl="file://$PROJECT_DIR$/p-business-module/business-module-daily/business-module-daily.iml" filepath="$PROJECT_DIR$/p-business-module/business-module-daily/business-module-daily.iml" />
       <module fileurl="file://$PROJECT_DIR$/p-business-module/business-module-gan/business-module-gan.iml" filepath="$PROJECT_DIR$/p-business-module/business-module-gan/business-module-gan.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p-business-module/business-module-jian3/app.iml" filepath="$PROJECT_DIR$/p-business-module/business-module-jian3/app.iml" />
       <module fileurl="file://$PROJECT_DIR$/p-business-module/business-module-read/business-module-read.iml" filepath="$PROJECT_DIR$/p-business-module/business-module-read/business-module-read.iml" />
       <module fileurl="file://D:\Android\ACODE\HsharePlatform\p-multiple-module\multiple-module-hcare\hsharemultiple.iml" filepath="D:\Android\ACODE\HsharePlatform\p-multiple-module\multiple-module-hcare\hsharemultiple.iml" />
       <module fileurl="file://$PROJECT_DIR$/p-multiple-module/multiple-module-hcare/multiple-module-hcare.iml" filepath="$PROJECT_DIR$/p-multiple-module/multiple-module-hcare/multiple-module-hcare.iml" />
