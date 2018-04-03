@@ -1,0 +1,73 @@
+apply plugin: 'com.android.application'
+apply plugin: 'me.tatarka.retrolambda'
+
+android {
+    compileSdkVersion rootProject.ext.android1["compileSdkVersion"]
+    buildToolsVersion rootProject.ext.android1["buildToolsVersion"]
+    useLibrary 'org.apache.http.legacy'
+
+    compileOptions {
+        targetCompatibility JavaVersion.VERSION_1_8
+        sourceCompatibility JavaVersion.VERSION_1_8
+    }
+
+    defaultConfig {
+        applicationId "hshare.business.module.jian3"
+        minSdkVersion rootProject.ext.android1["minSdkVersion"]
+        targetSdkVersion rootProject.ext.android1["targetSdkVersion"]
+        versionCode rootProject.ext.android1["versionCode"]
+        versionName rootProject.ext.android1["versionName"]
+        testInstrumentationRunner rootProject.ext.dependencies1["androidJUnitRunner"]
+    }
+    buildTypes {
+
+        debug {
+            buildConfigField "boolean", "LOG_DEBUG", "true"
+            buildConfigField "boolean", "USE_CANARY", "true"
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+
+        release {
+            buildConfigField "boolean", "LOG_DEBUG", "false"
+            buildConfigField "boolean", "USE_CANARY", "false"
+            minifyEnabled true
+            shrinkResources true
+            zipAlignEnabled true
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    lintOptions {
+        disable 'InvalidPackage'
+        disable "ResourceType"
+        abortOnError false
+    }
+}
+
+buildscript {
+    repositories {
+        jcenter()
+    }
+}
+
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+    //tools
+    provided rootProject.ext.dependencies1["javax.annotation"]
+    annotationProcessor rootProject.ext.dependencies1["dagger2-compiler"]
+    //view
+    annotationProcessor rootProject.ext.dependencies1["butterknife-compiler"]
+    compile rootProject.ext.dependencies1["paginate"]
+    //arms
+    //    compile 'me.jessyan:arms:2.0.1'
+    //test
+    testCompile rootProject.ext.dependencies1["junit"]
+    debugCompile rootProject.ext.dependencies1["canary-debug"]
+    releaseCompile rootProject.ext.dependencies1["canary-release"]
+    testCompile rootProject.ext.dependencies1["canary-release"]
+    compile 'com.github.Aspsine:SwipeToLoadLayout:1.0.4'
+    compile 'com.lsjwzh:materialloadingprogressbar:0.5.8-RELEASE'
+    implementation project(':p-base-component:arms-old')
+}
