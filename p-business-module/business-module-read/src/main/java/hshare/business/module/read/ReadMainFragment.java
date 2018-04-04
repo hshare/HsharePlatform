@@ -14,6 +14,7 @@ import android.view.View;
 import android.view.ViewGroup;
 
 
+import com.alibaba.android.arouter.launcher.ARouter;
 import com.aspsine.swipetoloadlayout.OnLoadMoreListener;
 import com.aspsine.swipetoloadlayout.OnRefreshListener;
 import com.aspsine.swipetoloadlayout.SwipeToLoadLayout;
@@ -178,8 +179,12 @@ public class ReadMainFragment extends Fragment implements OnRefreshListener, OnL
 
     @Override
     public void onItemClick(View view, int viewType, WenZhangBean data, int position) {
-        Intent intent = new Intent(getActivity(),ReadDetailActivity.class);
-        intent.putExtra("jumpUrl",data.getJumpUrl());
-        startActivity(intent);
+//        Intent intent = new Intent(getActivity(),ReadDetailActivity.class);
+//        intent.putExtra("jumpUrl",data.getJumpUrl());
+//        startActivity(intent);
+
+        ARouter.getInstance().build("/read/detail")
+                .withString("jumpUrl", data.getJumpUrl())
+                .navigation();
     }
 }

@@ -8,6 +8,8 @@ import android.text.TextUtils;
 import android.util.Log;
 import android.webkit.WebView;
 
+import com.alibaba.android.arouter.facade.annotation.Route;
+
 import org.jsoup.Jsoup;
 import org.jsoup.nodes.Document;
 import org.jsoup.select.Elements;
@@ -32,6 +34,7 @@ import io.reactivex.annotations.NonNull;
 import io.reactivex.disposables.Disposable;
 import io.reactivex.schedulers.Schedulers;
 
+@Route(path = "/read/detail")
 public class ReadDetailActivity extends AppCompatActivity {
 
     private WebView webview;

@@ -4,12 +4,19 @@ android {
     compileSdkVersion rootProject.ext.android["compileSdkVersion"]
     buildToolsVersion rootProject.ext.android["buildToolsVersion"]
 
+
     defaultConfig {
         applicationId "hshare.business.module.read"
         minSdkVersion rootProject.ext.android["minSdkVersion"]
         targetSdkVersion rootProject.ext.android["targetSdkVersion"]
         versionCode rootProject.ext.android["businessModuleReadVersionCode"]
         versionName rootProject.ext.android["businessModuleReadVersionName"]
+
+        javaCompileOptions {
+            annotationProcessorOptions {
+                arguments = [ moduleName : project.getName() ]
+            }
+        }
     }
     buildTypes {
         release {
@@ -27,6 +34,10 @@ dependencies {
     implementation rootProject.ext.dependencies["rxandroid2"]
     implementation rootProject.ext.dependencies["rxjava2"]
     implementation rootProject.ext.dependencies["jsoup"]
+
+    compile  rootProject.ext.dependencies["arouter-api"]
+    annotationProcessor  rootProject.ext.dependencies["arouter-compiler"]
+
     implementation project(':p-business-component:business-component-initguide')
     implementation 'com.github.hshare:HcareSwipeToLoadLayout:1.0.0'
     implementation 'com.github.Aspsine:SwipeToLoadLayout:1.0.4'

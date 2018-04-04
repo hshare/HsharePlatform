@@ -1,5 +1,6 @@
 package hshare.business.module.read;
 
+import android.app.Activity;
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
 import android.support.v4.view.ViewPager;
@@ -22,12 +23,15 @@ public class ReadMainActivity extends AppCompatActivity {
 
     private TabLayout mTabLayout;
     private ViewPager mViewPager;
-
+    private static Activity activity;
+    public static Activity getThis() {
+        return activity;
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.read_activity_main);
-
+        activity = this;
         mTabLayout = findViewById(R.id.tabs);
         mViewPager = findViewById(R.id.viewpager);
 

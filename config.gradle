@@ -48,7 +48,11 @@ ext {
     ]
 
     dependencies = [
-                //support
+                "arouter-api"          : "com.alibaba:arouter-api:1.2.1.1",
+                "arouter-compiler"          : "com.alibaba:arouter-compiler:1.1.2.1",
+
+
+            //support
                 "appcompat-v7"             : "com.android.support:appcompat-v7:${version["androidSupportSdkVersion"]}",
                 "design"                   : "com.android.support:design:${version["androidSupportSdkVersion"]}",
                 "support-v4"               : "com.android.support:support-v4:${version["androidSupportSdkVersion"]}",
