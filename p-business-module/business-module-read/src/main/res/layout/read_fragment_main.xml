@@ -2,28 +2,36 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:orientation="vertical">
 
     <com.aspsine.swipetoloadlayout.SwipeToLoadLayout
         android:id="@+id/swipeToLoadLayout"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="#e3e3e3">
+        android:background="#ffffff"
+        app:default_to_loading_more_scrolling_duration="500"
+        app:load_more_complete_delay_duration="0"
+        app:load_more_final_drag_offset="@dimen/load_more_final_offset_google"
+        app:load_more_trigger_offset="@dimen/load_more_trigger_offset_google"
+        app:refresh_final_drag_offset="@dimen/refresh_final_offset_google"
+        app:refresh_trigger_offset="@dimen/refresh_trigger_offset_google"
+        app:swipe_style="above">
 
         <include
             android:id="@id/swipe_refresh_header"
             layout="@layout/layout_google_hook_header" />
 
         <android.support.v7.widget.RecyclerView
-            android:id="@+id/swipe_target"
+            android:id="@id/swipe_target"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:background="@color/white"
-            android:orientation="vertical" />
+            android:clipToPadding="false" />
 
         <include
             android:id="@id/swipe_load_more_footer"
             layout="@layout/layout_google_hook_footer" />
+
     </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
 
 

@@ -24,10 +24,13 @@ dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation rootProject.ext.dependencies["appcompat-v7"]
     implementation rootProject.ext.dependencies["design"]
+    implementation rootProject.ext.dependencies["rxandroid2"]
+    implementation rootProject.ext.dependencies["rxjava2"]
+    implementation rootProject.ext.dependencies["jsoup"]
     implementation project(':p-business-component:business-component-initguide')
-
-    compile 'com.github.hshare:HcareSwipeToLoadLayout:1.0.0'
-    compile 'com.github.Aspsine:SwipeToLoadLayout:1.0.4'
+    implementation 'com.github.hshare:HcareSwipeToLoadLayout:1.0.0'
+    implementation 'com.github.Aspsine:SwipeToLoadLayout:1.0.4'
+    implementation project(':p-base-component:base-component-view')
 }
 
 

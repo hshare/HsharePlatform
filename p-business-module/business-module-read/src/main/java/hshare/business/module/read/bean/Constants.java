@@ -5,11 +5,11 @@ package hshare.business.module.read.bean;
  */
 
 public class Constants {
-    public static final String[] READ_TABS = {"爱情文章","亲情文章"
-           ,"友情文章","生活随笔",
-           "校园文章","经典文章",
-           "人生哲理","励志文章",
-           "搞笑文章","心情日记","英语文章"};
+    public static final String[] READ_TABS = {"爱情文章", "亲情文章"
+            , "友情文章", "生活随笔",
+            "校园文章", "经典文章",
+            "人生哲理", "励志文章",
+            "搞笑文章", "心情日记", "英语文章"};
     public static final String[] READ_URL = {"http://www.duwenzhang.com/wenzhang/aiqingwenzhang/",
             "http://www.duwenzhang.com/wenzhang/qinqingwenzhang/",
             "http://www.duwenzhang.com/wenzhang/youqingwenzhang/",
@@ -21,4 +21,5 @@ public class Constants {
             "http://www.duwenzhang.com/wenzhang/gaoxiaowenzhang/",
             "http://www.duwenzhang.com/wenzhang/xinqingriji/",
             "http://www.duwenzhang.com/wenzhang/yingyuwenzhang/"};
+    public static final String[] READ_KEYS = {"1", "2", "3", "8", "4", "5", "6", "7", "9", "69", "10"};
 }

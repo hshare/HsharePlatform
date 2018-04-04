@@ -9,7 +9,7 @@ import java.io.Serializable;
  */
 public class NormalViewPageBaseBean implements Serializable {
     private String title;
-    private String bundleString;
+    private String bundleString = "databean";
     private int what;
     private int what1;
     private int what2;
@@ -20,19 +20,16 @@ public class NormalViewPageBaseBean implements Serializable {
 
     public NormalViewPageBaseBean(String title) {
         this.title = title;
-        bundleString = "databean";
     }
 
     public NormalViewPageBaseBean(String title, Class<?> fragmentClass) {
         this.title = title;
         this.fragmentClass = fragmentClass;
-        bundleString = "databean";
     }
 
     public NormalViewPageBaseBean(String title, int what) {
         this.what = what;
         this.title = title;
-        bundleString = "databean";
     }
 
     public NormalViewPageBaseBean(String title,int what, int what1, int what2) {
@@ -40,12 +37,17 @@ public class NormalViewPageBaseBean implements Serializable {
         this.what = what;
         this.what1 = what1;
         this.what2 = what2;
-        bundleString = "databean";
     }
 
     public NormalViewPageBaseBean(String title, String bundleString) {
         this.title = title;
         this.bundleString = bundleString;
+    }
+
+    public NormalViewPageBaseBean(String title, String arg1,String arg2) {
+        this.title = title;
+        this.arg1 = arg1;
+        this.arg2 = arg2;
     }
 
     public int getWhat1() {

@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     package="hshare.business.module.read">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/read_launcher"
@@ -16,6 +18,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".ReadMainActivity"/>
+        <activity android:name=".ReadDetailActivity"/>
     </application>
 
 </manifest>

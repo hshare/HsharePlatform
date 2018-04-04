@@ -36,7 +36,7 @@ public class ReadMainActivity extends AppCompatActivity {
 
         for (int i = 0; i < Constants.READ_TABS.length; i++) {
             mTabLayout.addTab(mTabLayout.newTab().setText(Constants.READ_TABS[i]));
-            list.add(new NormalViewPageBaseBean(Constants.READ_TABS[i], Constants.READ_URL[i]));
+            list.add(new NormalViewPageBaseBean(Constants.READ_TABS[i], Constants.READ_URL[i],Constants.READ_KEYS[i]));
         }
         NormalViewPageAdapter adapter = new NormalViewPageAdapter(getSupportFragmentManager(), list, ReadMainFragment.class);
         mViewPager.setOffscreenPageLimit(Constants.READ_TABS.length);
