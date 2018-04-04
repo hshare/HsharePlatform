@@ -44,7 +44,7 @@ public class GuideHelper {
         return new GuideHelper();
     }
 
-    public void init(Context context, WelcomeImageBean welcomeImageBean, GuideBean guideBean) {
+    public void init(Context context, final WelcomeImageBean welcomeImageBean, final GuideBean guideBean) {
         this.context = context;
         this.welcomeImageBean = welcomeImageBean;
         this.guideBean = guideBean;
@@ -77,6 +77,9 @@ public class GuideHelper {
         FragmentTransaction fragmentTransaction = guideBean.getfManager().beginTransaction();
         fragmentTransaction.replace(welcomeImageBean.getReplaceRes(), welcomeFragment);
         fragmentTransaction.commit();
+        if (welcomeImageBean.getOnGuideFinishListener() != null){
+            welcomeImageBean.getOnGuideFinishListener().onGuideFinished();
+        }
     }
 
     public void initGuide() {

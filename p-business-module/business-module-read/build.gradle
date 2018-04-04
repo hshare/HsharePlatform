@@ -23,7 +23,11 @@ android {
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
     implementation rootProject.ext.dependencies["appcompat-v7"]
+    implementation rootProject.ext.dependencies["design"]
     implementation project(':p-business-component:business-component-initguide')
+
+    compile 'com.github.hshare:HcareSwipeToLoadLayout:1.0.0'
+    compile 'com.github.Aspsine:SwipeToLoadLayout:1.0.4'
 }
 
 

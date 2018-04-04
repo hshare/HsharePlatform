@@ -11,6 +11,7 @@ import java.io.Serializable;
  */
 
 public class WelcomeImageBean implements Serializable {
+    private OnGuideFinishListener onGuideFinishListener;
     private int replaceRes;
     private int defaultWelcomeImageRes;
     private String localWelcomeImage;
@@ -22,6 +23,14 @@ public class WelcomeImageBean implements Serializable {
     public WelcomeImageBean(int replaceRes,int defaultWelcomeImageRes){
         this.replaceRes = replaceRes;
         this.defaultWelcomeImageRes = defaultWelcomeImageRes;
+    }
+
+    public OnGuideFinishListener getOnGuideFinishListener() {
+        return onGuideFinishListener;
+    }
+
+    public void setOnGuideFinishListener(OnGuideFinishListener onGuideFinishListener) {
+        this.onGuideFinishListener = onGuideFinishListener;
     }
 
     public boolean hasLocalImage(){
