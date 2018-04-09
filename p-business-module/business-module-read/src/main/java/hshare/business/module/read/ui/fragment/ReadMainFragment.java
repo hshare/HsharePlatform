@@ -1,6 +1,5 @@
-package hshare.business.module.read;
+package hshare.business.module.read.ui.fragment;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
@@ -28,7 +27,8 @@ import java.util.List;
 
 import hshare.base.component.view.recyclerview.adapter.BaseRecyclerAdapter;
 import hshare.base.component.view.viewpager.base.NormalViewPageBaseBean;
-import hshare.business.module.read.adapter.ReadAdapter;
+import hshare.business.module.read.R;
+import hshare.business.module.read.ui.adapter.ReadAdapter;
 import hshare.business.module.read.bean.WenZhangBean;
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;

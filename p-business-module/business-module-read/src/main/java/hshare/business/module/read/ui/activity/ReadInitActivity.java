@@ -1,4 +1,4 @@
-package hshare.business.module.read;
+package hshare.business.module.read.ui.activity;
 
 import android.content.Intent;
 import android.os.Handler;
@@ -14,6 +14,7 @@ import hshare.business.component.initguide.GuideBean;
 import hshare.business.component.initguide.GuideHelper;
 import hshare.business.component.initguide.OnGuideFinishListener;
 import hshare.business.component.initguide.WelcomeImageBean;
+import hshare.business.module.read.R;
 
 @Route(path = "/read/init")
 public class ReadInitActivity extends AppCompatActivity {

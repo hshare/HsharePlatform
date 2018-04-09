@@ -1,8 +1,9 @@
-package hshare.business.module.read;
+package hshare.business.module.read.ui.router;
 
 import android.os.Handler;
 import android.os.Looper;
 
+@Deprecated
 public class MainLooper extends Handler {
     private static MainLooper instance = new MainLooper(Looper.getMainLooper());
 

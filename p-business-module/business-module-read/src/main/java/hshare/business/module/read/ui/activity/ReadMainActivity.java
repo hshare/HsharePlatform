@@ -1,4 +1,4 @@
-package hshare.business.module.read;
+package hshare.business.module.read.ui.activity;
 
 import android.app.Activity;
 import android.os.Bundle;
@@ -9,14 +9,10 @@ import android.support.v7.app.AppCompatActivity;
 import java.util.ArrayList;
 import java.util.List;
 
-import hshare.base.component.view.indicator.spring.SpringIndicator;
-import hshare.base.component.view.viewpager.ScrollerViewPager;
 import hshare.base.component.view.viewpager.adapter.NormalViewPageAdapter;
 import hshare.base.component.view.viewpager.base.NormalViewPageBaseBean;
-import hshare.business.component.initguide.GuideBean;
-import hshare.business.component.initguide.GuideFragment;
-import hshare.business.component.initguide.GuideHelper;
-import hshare.business.component.initguide.WelcomeImageBean;
+import hshare.business.module.read.R;
+import hshare.business.module.read.ReadMainFragment;
 import hshare.business.module.read.bean.Constants;
 
 public class ReadMainActivity extends AppCompatActivity {

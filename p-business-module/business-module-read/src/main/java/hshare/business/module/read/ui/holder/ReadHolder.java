@@ -1,4 +1,4 @@
-package hshare.business.module.read.holder;
+package hshare.business.module.read.ui.holder;
 
 import android.view.View;
 import android.widget.TextView;

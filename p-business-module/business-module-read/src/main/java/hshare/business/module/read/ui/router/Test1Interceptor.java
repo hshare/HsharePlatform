@@ -1,4 +1,4 @@
-package hshare.business.module.read;
+package hshare.business.module.read.ui.router;
 
 import android.app.AlertDialog;
 import android.content.Context;
@@ -11,6 +11,8 @@ import com.alibaba.android.arouter.facade.callback.InterceptorCallback;
 import com.alibaba.android.arouter.facade.template.IInterceptor;
 import com.alibaba.android.arouter.launcher.ARouter;
 
+import hshare.business.module.read.ui.activity.ReadMainActivity;
+
 /**
  * TODO feature
  *
@@ -18,6 +20,7 @@ import com.alibaba.android.arouter.launcher.ARouter;
  * @version 1.0
  * @since 2017/1/3 11:20
  */
+@Deprecated
 @Interceptor(priority = 7)
 public class Test1Interceptor implements IInterceptor {
     Context mContext;

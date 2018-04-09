@@ -1,4 +1,4 @@
-package hshare.business.module.read.adapter;
+package hshare.business.module.read.ui.adapter;
 
 import android.view.View;
 
@@ -8,7 +8,7 @@ import hshare.base.component.view.recyclerview.adapter.BaseRecyclerAdapter;
 import hshare.base.component.view.recyclerview.holder.BaseRecyclerHolder;
 import hshare.business.module.read.R;
 import hshare.business.module.read.bean.WenZhangBean;
-import hshare.business.module.read.holder.ReadHolder;
+import hshare.business.module.read.ui.holder.ReadHolder;
 
 
 /**

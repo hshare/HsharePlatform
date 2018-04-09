@@ -1,4 +1,4 @@
-package hshare.business.module.read;
+package hshare.business.module.read.ui.activity;
 
 import android.os.Bundle;
 import android.support.design.widget.TabLayout;
@@ -23,6 +23,7 @@ import java.util.regex.Pattern;
 
 import hshare.base.component.view.viewpager.adapter.NormalViewPageAdapter;
 import hshare.base.component.view.viewpager.base.NormalViewPageBaseBean;
+import hshare.business.module.read.R;
 import hshare.business.module.read.bean.Constants;
 import hshare.business.module.read.bean.WenZhangBean;
 import io.reactivex.Observable;

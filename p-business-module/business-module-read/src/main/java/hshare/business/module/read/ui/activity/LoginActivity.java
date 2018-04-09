@@ -1,10 +1,13 @@
-package hshare.business.module.read;
+package hshare.business.module.read.ui.activity;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
+
+import hshare.business.module.read.R;
+import hshare.business.module.read.ui.router.Test1Interceptor;
 
 /**
  * 功能/模块 ：***

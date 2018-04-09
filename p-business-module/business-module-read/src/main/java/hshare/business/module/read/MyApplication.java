@@ -4,14 +4,7 @@ import android.app.Application;
 
 import com.alibaba.android.arouter.launcher.ARouter;
 
-/**
- * 功能/模块 ：***
- *
- * @author huzeliang
- * @version 1.0 ${date} ${time}
- * @see ***
- * @since ***
- */
+
 public class MyApplication extends Application {
 
     @Override
