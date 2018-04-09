@@ -1,14 +1,20 @@
 package hshare.business.module.read.ui.activity;
 
 import android.content.Intent;
+import android.graphics.Color;
+import android.os.Build;
 import android.os.Handler;
 import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
+import android.view.Window;
+import android.view.WindowManager;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 
 import hshare.base.component.view.indicator.spring.SpringIndicator;
+import hshare.base.component.view.statusbar.StatusBarUtil;
 import hshare.base.component.view.viewpager.ScrollerViewPager;
 import hshare.business.component.initguide.GuideBean;
 import hshare.business.component.initguide.GuideHelper;
@@ -23,7 +29,10 @@ public class ReadInitActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.read_activity_init);
-        WelcomeImageBean welcomeImageBean = new WelcomeImageBean(R.id.rlRoot,R.mipmap.read_guide_page_1);
+
+        StatusBarUtil.setTranslucent(this,255);
+
+        WelcomeImageBean welcomeImageBean = new WelcomeImageBean(R.id.rlRoot,R.mipmap.read_welcome_default);
         welcomeImageBean.setOnGuideFinishListener(new OnGuideFinishListener() {
             @Override
             public void onGuideFinished() {

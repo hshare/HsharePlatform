@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+
+    <array name="read_duwenzhang_configs_titles">
+        <item>爱情文章</item>
+        <item>亲情文章</item>
+        <item>友情文章</item>
+        <item>生活随笔</item>
+        <item>校园文章</item>
+        <item>经典文章</item>
+        <item>人生哲理</item>
+        <item>励志文章</item>
+        <item>搞笑文章</item>
+        <item>心情日记</item>
+        <item>英语文章</item>
+    </array>
+
+    <array name="read_duwenzhang_configs_urls">
+        <item>http://www.duwenzhang.com/wenzhang/aiqingwenzhang/</item>
+        <item>http://www.duwenzhang.com/wenzhang/qinqingwenzhang/</item>
+        <item>http://www.duwenzhang.com/wenzhang/youqingwenzhang/</item>
+        <item>http://www.duwenzhang.com/wenzhang/shenghuosuibi/</item>
+        <item>http://www.duwenzhang.com/wenzhang/xiaoyuanwenzhang/</item>
+        <item>http://www.duwenzhang.com/wenzhang/jingdianwenzhang/</item>
+        <item>http://www.duwenzhang.com/wenzhang/renshengzheli/</item>
+        <item>http://www.duwenzhang.com/wenzhang/lizhiwenzhang/</item>
+        <item>http://www.duwenzhang.com/wenzhang/gaoxiaowenzhang/</item>
+        <item>http://www.duwenzhang.com/wenzhang/xinqingriji/</item>
+        <item>http://www.duwenzhang.com/wenzhang/yingyuwenzhang/</item>
+    </array>
+
+    <array name="read_duwenzhang_configs_keys">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>8</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>9</item>
+        <item>69</item>
+        <item>10</item>
+    </array>
+
+</resources>

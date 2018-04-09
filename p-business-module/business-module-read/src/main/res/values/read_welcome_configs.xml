@@ -9,8 +9,8 @@
 
     <string name="indicator_1">欢</string>
     <string name="indicator_2">迎</string>
-    <string name="indicator_3">光</string>
-    <string name="indicator_4">临</string>
+    <string name="indicator_3">使</string>
+    <string name="indicator_4">用</string>
 
     <array name="indicator_titles">
         <item>@string/indicator_1</item>
