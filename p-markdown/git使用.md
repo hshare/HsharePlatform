@@ -1,0 +1,24 @@
+[Git教程-菜鸟教程-简单明了](http://www.runoob.com/git/git-tutorial.html)  
+[Git教程-易百教程-详细深入](https://www.yiibai.com/git/git_pull.html)
+
+# 以下写个简单方便查阅的教程
+
+## 提交代码流程
+1. **git status -s**   
+	查看在你上次提交之后是否有修改，加-s以简短的方式输出
+2.  **git add .**   
+	命令*git add （文件名）*可将该文件添加到缓存,git add .添加全部文件
+3. **git commit -m '第一次版本提交'**   
+	使用 git add 命令将想要快照的内容写入缓存区， 而执行 git commit 将缓存区内容添加到本地仓库中  
+	如果没有全局配置账号密码，需要手动输入账号密码
+4. **git remote -v**   
+	查看远程分支，执行时加上 -v 参数，你还可以看到每个别名的实际链接地址。
+5. **git pull [options] [<repository> [<refspec>…]]**  
+	git pull <远程主机名> <远程分支名>:<本地分支名>  
+	比如，要取回origin主机的next分支，与本地的master分支合并，需要写成下面这样 
+	$ git pull origin next:master
+	如果远程分支(next)要与当前分支合并，则冒号后面的部分可以省略。上面命令可以简写为：
+	*$ git pull origin next*
+6. **git push [alias] [branch]**   
+	以上命令将你的 [branch] 分支推送成为 [alias] 远程仓库上的 [branch] 分支   
+	如：*git push origin master*  
