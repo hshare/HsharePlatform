@@ -16,6 +16,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+
+        <activity android:name="com.jaeger.statusbarutil.MainActivity" android:theme="@style/AppTheme1"/>
+        <activity android:name="com.jaeger.statusbarutil.ColorStatusBarActivity" android:theme="@style/AppTheme1"/>
+        <activity android:name="com.jaeger.statusbarutil.ImageStatusBarActivity" android:theme="@style/AppTheme1"/>
+        <activity android:name="com.jaeger.statusbarutil.ImageViewActivity" android:theme="@style/AppTheme1"/>
+        <activity android:name="com.jaeger.statusbarutil.UseInFragmentActivity" android:theme="@style/AppTheme1"/>
+        <activity android:name="com.jaeger.statusbarutil.SwipeBackActivity" android:theme="@style/AppTheme1"/>
+        <activity android:name="com.jaeger.statusbarutil.SwitchModeActivity" android:theme="@style/AppTheme1"/>
     </application>
 
 </manifest>

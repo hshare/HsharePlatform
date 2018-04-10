@@ -39,7 +39,7 @@ public class ReadInitActivity extends AppCompatActivity {
         welcomeImageBean.setOnGuideFinishListener(new OnGuideFinishListener() {
             @Override
             public void onGuideFinished() {
-                handler.sendEmptyMessageDelayed(100,250000);
+                handler.sendEmptyMessageDelayed(100,2500);
             }
         });
         GuideBean guideBean = new GuideBean(getSupportFragmentManager()

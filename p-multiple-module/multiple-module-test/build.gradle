@@ -22,5 +22,10 @@ android {
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation rootProject.ext.dependencies["appcompat-v7"]
+    implementation rootProject.ext.dependencies["design"]
+    implementation rootProject.ext.dependencies["bottom-navigation-bar"]
+    implementation rootProject.ext.dependencies["slidableactivity"]
+    compile project(path: ':p-base-component:base-component-view')
+
 }
 
