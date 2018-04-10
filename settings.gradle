@@ -11,3 +11,5 @@ include ':p-business-module:business-module-read'
 include ':p-business-module:business-module-jian3'
 
 include ':p-business-component:business-component-initguide'
+
+include ':p-markdown'

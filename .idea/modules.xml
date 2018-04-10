@@ -18,6 +18,7 @@
       <module fileurl="file://$PROJECT_DIR$/p-base-component/p-base-component.iml" filepath="$PROJECT_DIR$/p-base-component/p-base-component.iml" />
       <module fileurl="file://$PROJECT_DIR$/p-business-component/p-business-component.iml" filepath="$PROJECT_DIR$/p-business-component/p-business-component.iml" />
       <module fileurl="file://$PROJECT_DIR$/p-business-module/p-business-module.iml" filepath="$PROJECT_DIR$/p-business-module/p-business-module.iml" />
+      <module fileurl="file://$PROJECT_DIR$/p-markdown/p-markdown.iml" filepath="$PROJECT_DIR$/p-markdown/p-markdown.iml" />
       <module fileurl="file://$PROJECT_DIR$/p-multiple-module/p-multiple-module.iml" filepath="$PROJECT_DIR$/p-multiple-module/p-multiple-module.iml" />
     </modules>
   </component>
