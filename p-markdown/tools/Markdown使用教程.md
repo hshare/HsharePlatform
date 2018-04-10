@@ -1,6 +1,7 @@
 [Markdown教程](https://www.jianshu.com/p/1e402922ee32/)  
 [编辑工具MarkdownPad](http://markdownpad.com/)  
-[录制Gif工具licecap下载](https://www.cockos.com/licecap/)
+[录制Gif工具licecap下载](https://www.cockos.com/licecap/)  
+[路过图床](https://imgchr.com/)
 # 这里简化教程
 
 
