@@ -1,5 +1,6 @@
 package hshare.business.module.read.ui.activity;
 
+import android.app.Activity;
 import android.content.Intent;
 import android.graphics.Color;
 import android.os.Build;
@@ -8,8 +9,10 @@ import android.os.Message;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.LinearLayout;
 
 import com.alibaba.android.arouter.facade.annotation.Route;
 
@@ -30,13 +33,13 @@ public class ReadInitActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.read_activity_init);
 
-        StatusBarUtil.setTranslucent(this,255);
+        StatusBarUtil.setTranslucentForImageView(this,0,null);
 
-        WelcomeImageBean welcomeImageBean = new WelcomeImageBean(R.id.rlRoot,R.mipmap.read_welcome_default);
+        WelcomeImageBean welcomeImageBean = new WelcomeImageBean(R.id.rlRoot,R.mipmap.test111);
         welcomeImageBean.setOnGuideFinishListener(new OnGuideFinishListener() {
             @Override
             public void onGuideFinished() {
-                handler.sendEmptyMessageDelayed(100,2500);
+                handler.sendEmptyMessageDelayed(100,250000);
             }
         });
         GuideBean guideBean = new GuideBean(getSupportFragmentManager()
