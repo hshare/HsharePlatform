@@ -47,3 +47,13 @@ fa3fb56 HEAD@{6}: commit: 1. change some errors about packages and vars
 比如上图可运行 git reset --hard 40a9a83
 
 **注意：回退后本地的所有修改都没了哦**
+
+## 其他操作
+1. **创建分支**		
+> git branch [branch name]  
+
+1. **切换分支**		
+> git checkout [branch name]  
+
+1. **删除分支**		
+> git branch -D [branch name] 
