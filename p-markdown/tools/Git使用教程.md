@@ -56,4 +56,31 @@ fa3fb56 HEAD@{6}: commit: 1. change some errors about packages and vars
 > git checkout [branch name]  
 
 1. **删除分支**		
-> git branch -D [branch name] 
+> git branch -D [branch name]
+
+
+4. **重命名分支**  
+
+```
+$ git branch
+* master
+  new_branch
+
+Administrator@MY-PC /D/worksp/sample (master)
+$ git branch -m new_branch wchar_support
+
+``` 
+
+## 提交流程
+```
+git add .
+
+git commit -m "Feat: 分享跳转需求代码"
+//git commit -m "Fix: 分享跳转需求代码BUG"
+
+git rebase origin/develop
+
+git push origin feature/GYZQE-ITE-12
+
+
+``` 
