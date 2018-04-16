@@ -84,3 +84,34 @@ git push origin feature/GYZQE-ITE-12
 
 
 ``` 
+
+
+## 简易的命令行入门教程:
+
+### Git 全局设置:
+
+```
+git config --global user.name "Hu_Care"
+git config --global user.email "1015918929@qq.com"
+```
+
+### 创建 git 仓库:
+
+```
+mkdir MVPStudy
+cd MVPStudy
+git init
+touch README.md
+git add README.md
+git commit -m "first commit"
+git remote add origin https://gitee.com/hshare/MVPStudy.git
+git push -u origin master
+```
+
+### 已有项目?
+
+```
+cd existing_git_repo
+git remote add origin https://gitee.com/hshare/MVPStudy.git
+git push -u origin master
+```
