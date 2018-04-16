@@ -20,4 +20,8 @@ public class HsharePfActivity extends AppCompatActivity {
     public void onStatusBarClick(View view){
         startActivity(new Intent(HsharePfActivity.this, MainActivity.class));
     }
+
+    public void onSwipeClick(View view){
+        startActivity(new Intent(HsharePfActivity.this, com.aspsine.swipetoloadlayout.demo.MainActivity.class));
+    }
 }

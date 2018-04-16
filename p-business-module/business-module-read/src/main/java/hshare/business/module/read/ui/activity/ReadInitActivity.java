@@ -31,7 +31,7 @@ public class ReadInitActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.read_activity_init);
+        setContentView(R.layout.initguide_activity_init);
 
         StatusBarUtil.setTranslucentForImageView(this,0,null);
 

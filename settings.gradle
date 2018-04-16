@@ -1,6 +1,8 @@
 include ':p-multiple-module:multiple-module-test'
 include ':p-multiple-module:multiple-module-hcare'
 
+include ':p-base-component:swipeToLoadLayoutTemplate'
+include ':p-base-component:base-component-simplemvp'
 include ':p-base-component:base-componet-general'
 include ':p-base-component:base-component-view'
 include ':p-base-component:arms-old'

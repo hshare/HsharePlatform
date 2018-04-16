@@ -49,12 +49,15 @@ ext {
 
     dependencies = [
 
-                "bottom-navigation-bar"          : "com.ashokvarma.android:bottom-navigation-bar:1.3.0",
-                "slidableactivity"          : "com.r0adkll:slidableactivity:2.0.5",
+                "SwipeToLoadLayout"          : "com.github.Aspsine:SwipeToLoadLayout:1.0.4",
+                "materialloadingprogressbar"      : "com.lsjwzh:materialloadingprogressbar:0.5.8-RELEASE",
+
+                "bottom-navigation-bar"      : "com.ashokvarma.android:bottom-navigation-bar:1.3.0",
+                "slidableactivity"           : "com.r0adkll:slidableactivity:2.0.5",
 
 
-                "arouter-api"          : "com.alibaba:arouter-api:1.2.1.1",
-                "arouter-compiler"          : "com.alibaba:arouter-compiler:1.1.2.1",
+                "arouter-api"                : "com.alibaba:arouter-api:1.2.1.1",
+                "arouter-compiler"           : "com.alibaba:arouter-compiler:1.1.2.1",
 
 
             //support

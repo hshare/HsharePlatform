@@ -25,7 +25,17 @@ dependencies {
     implementation rootProject.ext.dependencies["design"]
     implementation rootProject.ext.dependencies["bottom-navigation-bar"]
     implementation rootProject.ext.dependencies["slidableactivity"]
+    implementation rootProject.ext.dependencies["recyclerview-v7"]
+
+    implementation rootProject.ext.dependencies["gson"]
+    implementation rootProject.ext.dependencies["picasso"]
+
     compile project(path: ':p-base-component:base-component-view')
+    compile project(path: ':p-base-component:swipeToLoadLayoutTemplate')
+
+
+    compile 'com.mcxiaoke.volley:library-aar:1.0.1'
+    compile 'com.github.Aspsine:FragmentNavigator:1.0.2'
 
 }
 
