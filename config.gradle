@@ -49,6 +49,7 @@ ext {
 
     dependencies = [
 
+                "BaseRecyclerViewAdapterHelper"          : "com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30",
                 "SwipeToLoadLayout"          : "com.github.Aspsine:SwipeToLoadLayout:1.0.4",
                 "materialloadingprogressbar"      : "com.lsjwzh:materialloadingprogressbar:0.5.8-RELEASE",
 
