@@ -41,7 +41,7 @@ public class MainActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.swipe_activity_main);
+        setContentView(R.layout.statusbar_activity_main);
 
         mDrawerLayout = findViewById(R.id.drawer_layout);
         contentLayout = findViewById(R.id.main);
