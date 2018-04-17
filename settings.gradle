@@ -8,7 +8,7 @@ include ':p-base-component:base-component-view'
 include ':p-base-component:arms-old'
 
 include ':p-business-module:business-module-daily'
-include ':p-business-module:business-module-gan'
+include ':p-business-module:business-module-j3new'
 include ':p-business-module:business-module-read'
 include ':p-business-module:business-module-jian3'
 

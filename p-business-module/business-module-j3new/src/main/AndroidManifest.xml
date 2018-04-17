@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="hshare.business.module.gan">
+    package="hshare.business.module.j3new">
 
     <application
         android:allowBackup="true"
@@ -9,7 +9,7 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".GanActivity">
+        <activity android:name=".J3NewActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

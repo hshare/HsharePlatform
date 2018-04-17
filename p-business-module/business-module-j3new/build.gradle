@@ -5,7 +5,7 @@ android {
     buildToolsVersion rootProject.ext.android["buildToolsVersion"]
 
     defaultConfig {
-        applicationId "hshare.business.module.gan"
+        applicationId "hshare.business.module.j3new"
         minSdkVersion rootProject.ext.android["minSdkVersion"]
         targetSdkVersion rootProject.ext.android["targetSdkVersion"]
         versionCode rootProject.ext.android["businessModuleGanVersionCode"]
