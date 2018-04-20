@@ -29,11 +29,11 @@ public class SimpleFragment extends Fragment {
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         mTvTitle = (TextView) view.findViewById(R.id.tv_title);
-        mFakeStatusBar = view.findViewById(R.id.fake_status_bar);
+//        mFakeStatusBar = view.findViewById(R.id.fake_status_bar);
     }
 
     public void setTvTitleBackgroundColor(@ColorInt int color) {
-        mTvTitle.setBackgroundColor(color);
-        mFakeStatusBar.setBackgroundColor(color);
+//        mTvTitle.setBackgroundColor(color);
+//        mFakeStatusBar.setBackgroundColor(color);
     }
 }

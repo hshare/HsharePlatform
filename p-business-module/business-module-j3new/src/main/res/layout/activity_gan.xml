@@ -4,6 +4,11 @@
     android:layout_height="match_parent"
     android:background="#ececec">
 
+    <FrameLayout
+        android:id="@+id/home_activity_frag_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
 
     <com.ashokvarma.bottomnavigation.BottomNavigationBar
         android:id="@+id/bottom_navigation_bar"

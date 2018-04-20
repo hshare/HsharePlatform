@@ -10,4 +10,9 @@
     <color name="blue">#2196F3</color>
     <color name="grey">#607D8B</color>
     <color name="orange">#F57C00</color>
+
+    <color name="transparent">#00ffffff</color>
+    <color name="dialog_bg">#aa333333</color>
+    <color name="no_network_bg">#333333</color>
+    <color name="search_corner_bg">#ddBBBABA</color>
 </resources>

@@ -20,4 +20,9 @@
     <color name="yalantis_eggplant">#663D4E</color>
     <color name="yalantis_sienna">#EB6460</color>
 
+    <color name="color_orange_red">#f03f33</color>
+    <color name="lineColor">#11333333</color>
+    <color name="black_font">#bb000000</color>
+    <color name="black_bg">#66333333</color>
+
 </resources>
