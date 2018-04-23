@@ -9,19 +9,11 @@
         android:layout_height="match_parent"
         android:background="#e3e3e3">
 
-        <include
-            android:id="@id/swipe_refresh_header"
-            layout="@layout/layout_google_hook_header" />
-
         <android.support.v7.widget.RecyclerView
             android:id="@id/swipe_target"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:clipToPadding="false" />
-
-        <include
-            android:id="@id/swipe_load_more_footer"
-            layout="@layout/layout_google_hook_footer" />
 
     </com.aspsine.swipetoloadlayout.SwipeToLoadLayout>
 
@@ -37,7 +29,7 @@
             android:background="#00000000" />
 
         <FrameLayout
-            android:id="@+id/home_title_bar_layout"
+            android:id="@+id/homeTitleBarLayout"
             android:layout_width="match_parent"
             android:layout_height="50dp">
 
@@ -94,7 +86,7 @@
                         android:ellipsize="end"
                         android:gravity="center_vertical"
                         android:lines="1"
-                        android:text="运动户外超级品牌类日 跨店铺跨店铺"
+                        android:text="以手中三尺长剑，镇四方八秒山河"
                         android:textColor="@color/white"
                         android:textSize="15sp" />
 
@@ -127,5 +119,4 @@
             </LinearLayout>
         </FrameLayout>
     </LinearLayout>
-
 </FrameLayout>

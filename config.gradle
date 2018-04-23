@@ -51,7 +51,7 @@ ext {
 
                 "bottom-navigation-bar"          : "com.ashokvarma.android:bottom-navigation-bar:2.0.4",
 
-                "BaseRecyclerViewAdapterHelper"          : "com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.30",
+                "BaseRecyclerViewAdapterHelper"          : "com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.38",
                 "SwipeToLoadLayout"          : "com.github.Aspsine:SwipeToLoadLayout:1.0.4",
                 "materialloadingprogressbar"      : "com.lsjwzh:materialloadingprogressbar:0.5.8-RELEASE",
 

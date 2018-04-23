@@ -22,6 +22,9 @@ android {
 
 dependencies {
     implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation rootProject.ext.dependencies["cardview-v7"]
+    implementation rootProject.ext.dependencies["glide"]
+    implementation rootProject.ext.dependencies["gson"]
     implementation rootProject.ext.dependencies["SwipeToLoadLayout"]
     implementation rootProject.ext.dependencies["design"]
     implementation rootProject.ext.dependencies["appcompat-v7"]
@@ -32,6 +35,11 @@ dependencies {
     implementation project(':p-base-component:base-component-view')
     implementation project(':p-base-component:swipeToLoadLayoutTemplate')
     compile project(path: ':p-base-component:base-componet-general')
+
+    implementation 'cn.bingoogolapple:bga-banner:2.2.4@aar'
+
+//    implementation 'com.github.bumptech.glide:glide:4.7.1'
+//    annotationProcessor 'com.github.bumptech.glide:compiler:4.7.1'
 }
 
 
