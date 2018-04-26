@@ -51,8 +51,8 @@ public class DemoMultipleItemRvAdapter extends MultipleItemRvAdapter<NormalMulti
 
     @Override
     public void registerItemProvider() {
-        //注册相关的条目provider
         //Register related entries provider
+        //注册相关的条目provider
         mProviderDelegate.registerProvider(new TextItemProvider());
         mProviderDelegate.registerProvider(new TextItemProvider1());
         mProviderDelegate.registerProvider(new TextItemProvider2());
