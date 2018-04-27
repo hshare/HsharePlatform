@@ -13,8 +13,8 @@
 
         <ImageView
             android:id="@+id/ivAvatar"
-            android:layout_width="30dp"
-            android:layout_height="30dp"
+            android:layout_width="45dp"
+            android:layout_height="45dp"
             android:scaleType="centerCrop"
             android:src="@mipmap/bg_normal" />
 
@@ -22,7 +22,10 @@
             android:id="@+id/tvTitle"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="111" />
+            android:textColor="#666666"
+            android:layout_marginTop="2dp"
+            android:text="111"
+            android:textSize="12sp" />
     </LinearLayout>
 
 

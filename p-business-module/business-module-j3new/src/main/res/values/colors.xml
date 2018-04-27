@@ -14,5 +14,5 @@
     <color name="transparent">#00ffffff</color>
     <color name="dialog_bg">#aa333333</color>
     <color name="no_network_bg">#333333</color>
-    <color name="search_corner_bg">#7feeeeee</color>
+    <color name="search_corner_bg">#ddBBBABA</color>
 </resources>

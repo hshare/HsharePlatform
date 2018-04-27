@@ -16,6 +16,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.FrameLayout;
+import android.widget.LinearLayout;
 
 import com.aspsine.swipetoloadlayout.OnLoadMoreListener;
 import com.aspsine.swipetoloadlayout.OnRefreshListener;
@@ -73,6 +74,10 @@ public class J3HomeFragment extends Fragment implements OnRefreshListener, OnLoa
     @Override
     public void onViewCreated(@NonNull View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
+
+        View fake_status_bar = view.findViewById(R.id.fake_status_bar);
+        fake_status_bar.setLayoutParams(new LinearLayout.LayoutParams(LinearLayout.LayoutParams.MATCH_PARENT,StatusBarUtil.getStatusBarHeight(getContext())));
+
 
         recyclerView = (RecyclerView) view.findViewById(R.id.swipe_target);
         homeTitleBarBgView = (View) view.findViewById(R.id.home_title_bar_bg_view);
@@ -166,16 +171,16 @@ public class J3HomeFragment extends Fragment implements OnRefreshListener, OnLoa
         HotBean hotBean = (new Gson()).fromJson(Api.HOT_STRING_P1, HotBean.class);
         list.add(new NormalMultipleEntity(TOP_BANNER, hotBean.getInfo_content_list().subList(0, 5)));
 
-        list.add(new NormalMultipleEntity(TOP_GRID, new InfoContentListBean("新闻","gonglue.png")));
-        list.add(new NormalMultipleEntity(TOP_GRID, new InfoContentListBean("公告","gonglue.png")));
-        list.add(new NormalMultipleEntity(TOP_GRID, new InfoContentListBean("娱乐","gonglue.png")));
-        list.add(new NormalMultipleEntity(TOP_GRID, new InfoContentListBean("美图","gonglue.png")));
-        list.add(new NormalMultipleEntity(TOP_GRID, new InfoContentListBean("COS","gonglue.png")));
-        list.add(new NormalMultipleEntity(TOP_GRID, new InfoContentListBean("漫画","gonglue.png")));
-        list.add(new NormalMultipleEntity(TOP_GRID, new InfoContentListBean("视频","gonglue.png")));
-        list.add(new NormalMultipleEntity(TOP_GRID, new InfoContentListBean("音乐","gonglue.png")));
-        list.add(new NormalMultipleEntity(TOP_GRID, new InfoContentListBean("周边","gonglue.png")));
-        list.add(new NormalMultipleEntity(TOP_GRID, new InfoContentListBean("攻略","gonglue.png")));
+        list.add(new NormalMultipleEntity(TOP_GRID, new InfoContentListBean("新闻","gg01.png")));
+        list.add(new NormalMultipleEntity(TOP_GRID, new InfoContentListBean("公告","gg02.png")));
+        list.add(new NormalMultipleEntity(TOP_GRID, new InfoContentListBean("娱乐","gg03.png")));
+        list.add(new NormalMultipleEntity(TOP_GRID, new InfoContentListBean("美图","gg04.png")));
+        list.add(new NormalMultipleEntity(TOP_GRID, new InfoContentListBean("COS","gg05.png")));
+        list.add(new NormalMultipleEntity(TOP_GRID, new InfoContentListBean("漫画","gg06.png")));
+        list.add(new NormalMultipleEntity(TOP_GRID, new InfoContentListBean("视频","gg07.png")));
+        list.add(new NormalMultipleEntity(TOP_GRID, new InfoContentListBean("音乐","gg08.png")));
+        list.add(new NormalMultipleEntity(TOP_GRID, new InfoContentListBean("周边","gg09.png")));
+        list.add(new NormalMultipleEntity(TOP_GRID, new InfoContentListBean("攻略","gg10.png")));
 
 
         for (int i = 5; i < hotBean.getInfo_content_list().size(); i++) {
